@@ -1,1 +1,11 @@
+IAM - It is stand for the identity and access manager 
+IAM is used to restrict the unauthorized user to access the resources in cloud provider like AWS resources,Azure resources and GCP resources.
+
+
+Example : Like the authorized person can come in office and work outsider can not work and enter.
+
+Authentication and Authorization
+
+Authentication is like to come to office but you are in accounts department not authorized to work in operational teams work.
+Authorization is the second step of authentication like first authenticate then work where you are authorized accounts team can work in only accounts system not in another one.
 
