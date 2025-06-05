@@ -1,4 +1,5 @@
 Create VM using Azure CLI
+
 Start with creating a Resource Group
 
 az group create --name learn-azure-cli --location eastus
