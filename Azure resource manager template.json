@@ -1,0 +1,51 @@
+*************************Steps to write this templete***************************
+
+Step1: Open the vs code 
+Step2: Install the Azure resource Manager templete Extension 
+Step3: type the Arm select the arm!
+Step4 : Go to the  "resources".
+Step5: Change the fields accordings to yours.
+
+
+
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "functions": [],
+    "variables": {},
+    "resources": [
+        {
+            "name": "storageaccount1",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2023-05-01",
+            "tags": {
+                "displayName": "storageaccount1"
+            },
+            "location": "[resourceGroup().location]",
+            "kind": "StorageV2",
+            "sku": {
+                "name": "Premium_LRS",
+                "tier": "Premium"
+            }
+        }
+    ],
+    "outputs": {}
+}
+
+Steps to deploy storage account arm template
+Create resource group
+
+az group create --name vscode --location 'Central US'
+
+Create the storage account
+
+Switch to the folder where you have the 01-storage-account.json or similar file
+
+az deployment group create --resource-group vscode --template-file Azure resource manager template.json
+
+
+
+
+
+
