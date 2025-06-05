@@ -9,3 +9,5 @@ Authentication and Authorization
 Authentication is like to come to office but you are in accounts department not authorized to work in operational teams work.
 Authorization is the second step of authentication like first authenticate then work where you are authorized accounts team can work in only accounts system not in another one.
 
+Authentication -- User and Group 
+Authorization -- Roles
